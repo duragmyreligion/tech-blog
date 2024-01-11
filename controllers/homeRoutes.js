@@ -36,16 +36,9 @@ router.get('/blog_post/:id', withAuth, async (req, res) => {
     });
 
     const forums = forumData.get({ plain: true });
-    // const commentData = await Comment.findByPk(req.params.id, { 
-    //   include: [{model: Comment}],
-    //   attributes: {exclude:['password']},
-    // });
-
-    // const comments = commentData.get({ plain: true });
 
     res.render('blog_post', {
       ...forums,
-      // ...comments,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
