@@ -1,0 +1,45 @@
+<div class="newpost-container">
+
+<div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+    <form class="new-forum-form">
+        <div class="formbold-input-flex">
+          <div>
+              <input
+              type="text"
+              id="forum-title"
+              placeholder="Type title here..."
+              class="formbold-form-input"
+              />
+              <label for="forum-title" class="formbold-form-label"> Title: </label>
+          </div>
+          <div>
+              <input
+              type="text"
+              id="forum-game"
+              placeholder="Name of game..."
+              class="formbold-form-input"
+              />
+              <label for="forum-game" class="formbold-form-label forum-game"> Name&nbsp;of&nbsp;Game: </label>
+          </div>
+        </div>
+        <div class="formbold-textarea">
+            <textarea
+                rows="10"
+                id="forum-desc"
+                placeholder="Type your description..."
+                class="formbold-form-input"
+            ></textarea>
+            <label for="forum-desc" class="formbold-form-label"> Description: </label>
+        </div>
+         {{!-- <button class="emoji-selector" id="emoji-selector"><img src="../public/images/smiley-png-5a3a6ae76142e5.0944005715137778953985.jpg"></button> --}}
+
+        <button class="btn create-post-button">
+            Create Post
+        </button>
+    </form>
+  </div>
+</div>
+
+</div>
+<script src="./js/forum.js"></script>
